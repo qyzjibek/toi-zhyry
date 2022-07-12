@@ -1,38 +1,68 @@
-.App {
+.slider-container{
+  display: flex;
+  justify-content: center;
+}
+
+h3{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul{
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .rest-select{
+  display: none;
+} */
+
+body {
+  background: #f1f2f6;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.stats {
+  border-radius: 40px;
+  background-color: rgb(247, 247, 247);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-left: 360px;
+  margin-right: 360px;
+  padding: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.stats-emoji {
+  font-size: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stats-text {
+  margin: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.stats-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#calc-btn {
+  background-image: linear-gradient(90deg, #ff512f, #dd2476);
+  margin-right: 50px;
+  margin-left: 25px;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: Nunito, sans-serif;
+  border-radius: 19px;
+  width: 400px;
+}
+
+.desc-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

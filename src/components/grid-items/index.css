@@ -1,0 +1,90 @@
+.items {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    grid-gap: 10px 10px;
+}
+
+.item-wrapper {
+    max-width: 100%;
+    background-color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 15px;
+    width: 100%;
+}
+
+.item-name {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.item-control {
+    font-size: 20px;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px 10px;
+    margin-top: 25px;
+}
+
+.item-input {
+    font-size: 16px;
+    text-align: center;
+}
+
+.item-buy {
+    background:linear-gradient(rgb(255, 38, 142) 0%, rgb(255, 105, 79) 100%);
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 12px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 700;
+    outline: none;
+    border: none;
+}
+
+.title {
+    width: 100%;
+    color: #fff;
+    background-color: #2ecc71;
+    background: linear-gradient(rgb(255, 38, 142) 0%, rgb(255, 105, 79) 100%);
+    padding: 20px;
+    margin: 10px 0;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    top: 0;
+    position: sticky;
+    z-index: 9999;
+}
+
+.container {
+    max-width: 1000px;    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-img {
+    display: block;
+    margin: 15px auto;
+    height: 120px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.instruction {
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.class-img {
+    width: 70px;
+}

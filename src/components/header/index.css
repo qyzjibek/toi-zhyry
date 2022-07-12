@@ -1,0 +1,39 @@
+.logo-title {
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: black;
+}
+
+.header-wrapper {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 8px 30px 8px;
+    background-color: rgb(247, 247, 247);
+    margin-bottom: 25px;
+}
+
+.header-inner {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 14px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.subtitle {
+    font-family: Nunito, sans-serif;
+    color: black;
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 500;
+    padding: 8px;
+}
+
+.headline {
+    padding: auto;
+    font-family: Nunito, sans-serif;
+    font-size: 55px;
+    line-height: 60px;
+}

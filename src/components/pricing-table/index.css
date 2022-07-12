@@ -1,0 +1,113 @@
+.pricing-card {
+    background: linear-gradient(rgba(255, 38, 142, 0.8) 0%, rgb(255, 105, 79) 100%);
+    box-shadow: 0 3px 10px rgb(16, 29, 53);
+    width: 25%;
+    max-width: 300px;
+    height: 500px;
+    border-radius: 4px;
+    transition: all 0.3s ease-out;
+}
+
+.pricing-card:nth-child(2) {
+    background: rgb(240, 161, 201);
+    margin: 0 2rem;
+    height: 540px;
+}
+
+.pricing-card:hover {
+    transform: scale(1.03);
+}
+
+div.pricing-card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    align-items: center;
+    color: var(--light);
+}
+
+div.pricing-card h3 {
+    padding: 16px 32px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+div.pricing-card h4 {
+    font-size: 25px;
+}
+
+div.pricing-card  p {
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 24px;
+}
+
+div.pricing-card ul {
+    color: white;
+    margin: 12px 0 32px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+div.pricing-card ul li {
+    margin-bottom: 10px;
+}
+
+svg {
+    width: 60px;
+    margin: 2rem 0;
+}
+
+.btn {
+    padding: 12px 0;
+    cursor: pointer;
+    width: 80%;
+    font-size: 24px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    transition: border-radius 0.5s;
+}
+
+.btn:hover {
+    border-radius: 0px;
+}
+
+.blue {
+    background-color: white;
+    color: var(--light);
+}
+
+.plans-wrapper {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+@media screen and (max-width:960px) {
+    .pricing-card {
+        width: 30%;
+    }
+    .pricing-card:nth-child(2) {
+        margin: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .pricing-card {
+        margin: 1rem 0;
+        width: 50%;
+    }
+}
