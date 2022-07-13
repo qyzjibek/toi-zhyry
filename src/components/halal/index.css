@@ -1,0 +1,43 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .halal-select {
+    display: none;
+  }
+  
+  .halal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  
+  .label-text {
+    font-size: 30px;
+    width: 200px;
+    padding: 15px 30px;
+  }
+  
+  li {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  li img {
+    margin-bottom: 10px;
+  }
+  
+  input:checked + label {
+    border-radius: 20px;
+    background-image: linear-gradient(90deg, #ff512f, #dd2476);
+  }
+  
+  .link-btn {
+    display: flex;
+    justify-content: center;
+  }

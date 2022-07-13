@@ -30,14 +30,16 @@ const marks = [
   },
 ];
 
-export const SlideBar = () => {
+export const SlideBar = ({setRes}) => {
   const [value, setValue] = useState(50);
 
   function valuetext(value) {
     const res = Number(value) * 10;
+    setRes(res);
     setValue(res);
     return `${res}`;
   }
+
   return (
     <div className="guestsNum">
       <h2>Қанша адам шақырасыз?</h2>

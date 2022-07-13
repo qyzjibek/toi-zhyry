@@ -1,9 +1,16 @@
+import eaMusic from '../assets/ea.mp3'
+import knMusic from '../assets/kn.mp3'
+import erkeMusic from '../assets/erke.mp3'
+import tttMusic from '../assets/ttt.mp3'
+import abMusic from '../assets/ab.mp3'
+
 export const singers = [
   {
     imageUrl: "https://images.satu.kz/83879044_w640_h640_kajrat-nurtas.jpg",
     Name: "Қайрат Нұртас",
     songCost: 1000,
     id: 1,
+    music: knMusic
   },
   {
     imageUrl:
@@ -11,6 +18,7 @@ export const singers = [
     Name: "Ерке Есмахан",
     songCost: 1000,
     id: 2,
+    music: erkeMusic
   },
   {
     imageUrl:
@@ -25,6 +33,7 @@ export const singers = [
     Name: "Абай Бегей",
     songCost: 1000,
     id: 4,
+    music: abMusic
   },
   {
     imageUrl: "https://lmusic.kz/images/artist_cover/akylbek-zhemenej.jpg",
@@ -45,6 +54,7 @@ export const singers = [
     Name: "Төреғали Төреәлі",
     songCost: 1000,
     id: 7,
+    music: tttMusic
   },
   {
     imageUrl:
@@ -53,4 +63,11 @@ export const singers = [
     songCost: 1000,
     id: 8,
   },
+  {
+    imageUrl: "http://newtimes.kz/storage/news/news/2020/04/29/5ea903ea6016d002527191.jpeg",
+    Name: "Ернар Айдар",
+    songCost: 1000,
+    id: 9,
+    music: eaMusic
+  }
 ];

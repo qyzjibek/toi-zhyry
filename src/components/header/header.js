@@ -8,7 +8,7 @@ export const Header = () => {
     <>
       <div className='header-wrapper'>
         <div className='header-inner'>
-          <img src={logo} style={{width: "90px", padding: "10px", borderRadius: "50%", fontFamily: "'Open Sans', sans-serif"}} alt="logo"/>
+          <img src={logo} style={{width: "108px", padding: "10px", borderRadius: "50%", fontFamily: "'Open Sans', sans-serif"}} alt="logo"/>
           <div>
           <div className="headline">Той жыры</div>
           <div className="subtitle">Той шығынын есептейтін калькулятор</div>

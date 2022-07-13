@@ -3,11 +3,22 @@ import villa from "../../assets/villa.jpg";
 import versal from "../../assets/versal.jpg";
 import rassal from "../../assets/rassal.jpg";
 
-export const Restaurants = () => {
-  const [rest, setRest] = useState("");
+export const Restaurants = ({setPrice, setTotalObject}) => {
+    const [rest, setRest] = useState("");
 
   const handleRest = (val) => {
+      switch (val) {
+          case "econom": setPrice(10000); break;
+          case "middle": setPrice(20000); break;
+          case "vip": setPrice(40000); break;
+          default: return;
+      }
+
     setRest(val);
+    setTotalObject((prev) => ({
+        ...prev,
+        rest: val
+    }));
   };
 
   return (
@@ -29,6 +40,7 @@ export const Restaurants = () => {
               </div>
               <h2>Versal</h2>
               <p className="rest-rate">Төменгі класс</p>
+              <p className="rest-rate" style={{textAlign: "center"}}>Адам басына 10K тг дейін</p>
               <span className="check-icon">
                 <span className="icon"></span>
               </span>
@@ -50,6 +62,7 @@ export const Restaurants = () => {
               </div>
               <h2>Rass-Al</h2>
               <p className="rest-rate">Ортаңғы класс</p>
+              <p className="rest-rate" style={{textAlign: "center"}}>Адам басына 20K тг дейін</p>
               <span className="check-icon">
                 <span className="icon"></span>
               </span>
@@ -71,6 +84,7 @@ export const Restaurants = () => {
               </div>
               <h2>Villa dei Fiori</h2>
               <p className="rest-rate">Жоғарғы класс</p>
+              <p className="rest-rate" style={{textAlign: "center"}}>Адам басына 45K тг дейін</p>
               <span className="check-icon">
                 <span className="icon"></span>
               </span>

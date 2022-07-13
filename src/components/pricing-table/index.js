@@ -26,16 +26,17 @@ export const PricingTable  = ({sum}) => {
         {monthlyIncomes.map((plan) => (
         <div className='pricing-card'>
                 <h3>{plan.name}</h3>
-                <h4>${plan.sum}</h4>
+                <h4>KZT {Math.floor(plan.sum)}</h4>
                 <p>{plan.period} айға бөліп төлеу</p>
-                <ul>
+                {/* <ul >
                     <li>100 Transaction</li>
                     <li>2% Cash Back</li>
                     <li>$10,000 limit</li>
-                </ul>
-                <button className='btn blue' onClick={clickHandler}>Сілтеме бойынша өту</button>
+                </ul> */}
+                <button class="btn blue" onClick={clickHandler} >Сілтеме бойынша өту</button>
             </div>
-))}
+        ))}
         </div>
+
     )
 }
