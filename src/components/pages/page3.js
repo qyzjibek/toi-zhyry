@@ -39,7 +39,7 @@ export const Page3 = () => {
             alt="vip"
           />
           <div className="item-control">
-            <div>Данасы: </div>
+            <div>Дана: </div>
             <input
               type="number"
               className="item-input"
