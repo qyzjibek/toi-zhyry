@@ -1,13 +1,19 @@
-.slider-container{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider-container {
   display: flex;
   justify-content: center;
 }
 
-h3{
+h3 {
   text-align: center;
 }
 
-ul{
+ul {
   display: flex;
   justify-content: center;
 }
@@ -65,4 +71,140 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* RESTAURANTS */
+
+.radio-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.radio-container > h2,
+.guestsNum > h2 {
+  margin-bottom: 20px;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+}
+
+.guestsNum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.radio-buttons {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.custom-radio input {
+  display: none;
+}
+
+.radio-btn {
+  position: relative;
+  width: 234px;
+  height: 320px;
+  margin: 10px;
+  background-color: #222533;
+  border: 4px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.radio-btn .content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-btn .img {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.img img {
+  border-radius: 10px;
+  user-select: none;
+}
+
+.radio-btn h2 {
+  color: white;
+}
+
+.rest-rate {
+  color: white;
+  font-size: 16px;
+}
+
+.radio-btn .check-icon {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #1b1d28;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.radio-btn .check-icon .icon {
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 8px;
+  margin-top: -2px;
+  transform: rotate(-40deg);
+}
+
+.radio-btn .check-icon .icon::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.231);
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: all 0.2s ease-in-out;
+}
+.radio-btn .check-icon .icon::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.231);
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-radio input:checked + .radio-btn {
+  border: 4px solid #7434c3;
+}
+
+.custom-radio input:checked + .radio-btn .check-icon {
+  background-color: #7434c3;
 }
